@@ -1,0 +1,98 @@
+/*----------------------------------------------------------------------------- 
+  Content
+-----------------------------------------------------------------------------*/
+
+.app-content {
+  padding:0px;
+  box-shadow:inset 0 5px 0 rgba(0,0,0,0.1);
+  line-height: 1.6;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+  height: 80vh;
+}
+
+/*----------------------------------------------------------------------------- 
+  Lean Canvas
+-----------------------------------------------------------------------------*/
+
+.lean-canvas {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.lean-canvas > * {
+  flex: 1;
+}
+
+.lean-canvas .row {
+  display: flex;
+}
+
+.lean-canvas .row:first-child {
+  flex: 2;
+}
+
+.lean-canvas .column {
+  border: 1px solid black;
+  flex: 1;
+}
+
+.lean-canvas .block-title {
+  color: black;
+  padding: 5px 20px 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lean-canvas .block-title h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lean-canvas .block-title a {
+  color: black;
+  display: none;
+}
+
+.lean-canvas .block-title:hover  a{
+  display: block;
+}
+
+.lean-canvas .block-contents {
+  display: flex;
+  flex-direction: column;
+  /*padding: 10px;*/
+}
+
+.lean-canvas .block-item {
+  flex: 1;
+  border: 1 solid red;
+  background:rgba(255,255,255,0.2);
+  border-radius: 5px;
+  margin:10px;
+  padding:10px;
+  font-size: 14px;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*align-items: stretch;*/
+}
+
+.lean-canvas .block-item > * {
+  /*flex: 1;*/
+}
+
+.lean-canvas .block-item a {
+  display: none;
+  color: black;
+}
+
+.lean-canvas .block-item:hover a {
+  display: block;
+}
+
+.lean-canvas .block-item-icons {
+  display: flex;
+  justify-content: space-between;
+}
